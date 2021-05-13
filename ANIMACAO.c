@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 void anjo_direita(){
     printf("                            -=-\n");
     printf("                         (\\  _  /)\n");
@@ -73,43 +72,8 @@ void livro(){
 void pessoas(){
     printf("  _____          _____          _____          ________             _____           \n");                      
     printf("  //_+\\         %% '-' %%        J O-O L           | `-` |           | *-* |       \n");             
-    printf("  /[\\]\\          /[U]\\         --[:]--            /[Y]\\          / [__I__] \\   \n");                         
+    printf("  /[\\]\\          /[U]\\         --[:]--            /[Y]\\           /[__I__]\\   \n");                         
     printf(" _/  |_          _I |_          _\\ /_             _| |_           _|     \\_       \n");                       
-}
-
-void pessoa_2_5(){
-    printf("                 _____                                              _____           \n");
-    printf("                %% '-' %%                                            | *-* |       \n");
-    printf("                 /[U]\\                                           / [__I__] \\   \n");
-    printf("                 _I |_                                            _|     \\_       \n");
-}
-
-void pessoa_2_4(){
-    printf("                 _____                         ________            \n");                      
-    printf("                %% '-' %%                          | `-` |        \n");             
-    printf("                 /[U]\\                            /[Y]\\        \n");                         
-    printf("                 _I |_                            _| |_           \n");                       
-}
-
-void pessoa_2_3(){
-    printf("                 _____          _____     \n");                      
-    printf("                %% '-' %%        J O-O L \n");             
-    printf("                 /[U]\\         --[:]-- \n");                         
-    printf("                 _I |_          _\\ /_    \n");                       
-}
-
-void pessoa_1_5(){
-    printf("  _____                                                             _____\n");                      
-    printf("  //_+\\                                                            | *-* |\n");             
-    printf("  /[\\]\\                                                          / [__I__] \\\n");                         
-    printf(" _/  |_                                                            _|     \\_\n");                       
-}
-
-void pessoa_1_4(){
-    printf("  _____                                        ________     \n");
-    printf("  //_+\\                                          | `-` | \n");
-    printf("  /[\\]\\                                           /[Y]\\ \n");
-    printf(" _/  |_                                           _| |_    \n");
 }
 
 void pessoa_1(){
@@ -143,7 +107,7 @@ void pessoa_4(){
 void pessoa_5(){
     printf("                                                                    _____\n");          
     printf("                                                                   | *-* |\n");      
-    printf("                                                                 / [__I__] \\\n");  
+    printf("                                                                  /[__I__]\\\n");  
     printf("                                                                  _|     \\_\n");      
 }
 
@@ -160,6 +124,86 @@ void pessoa_1_3(){
     printf("  /[\\]\\                        --[:]-- \n");
     printf(" _/  |_                         _\\ /_    \n");
 }
+
+void pessoa_1_4(){
+    printf("  _____                                        ________     \n");
+    printf("  //_+\\                                          | `-` | \n");
+    printf("  /[\\]\\                                           /[Y]\\ \n");
+    printf(" _/  |_                                           _| |_    \n");
+}
+
+
+void pessoa_1_5(){
+    printf("  _____                                                             _____\n");                      
+    printf("  //_+\\                                                            | *-* |\n");             
+    printf("  /[\\]\\                                                           /[__I__]\\\n");                         
+    printf(" _/  |_                                                            _|     \\_\n");                       
+}
+
+void pessoa_2_3(){
+    printf("                 _____          _____     \n");                      
+    printf("                %% '-' %%        J O-O L \n");             
+    printf("                 /[U]\\         --[:]-- \n");                         
+    printf("                 _I |_          _\\ /_    \n");                       
+}
+
+void pessoa_2_4(){
+    printf("                 _____                         ________            \n");                      
+    printf("                %% '-' %%                          | `-` |        \n");             
+    printf("                 /[U]\\                            /[Y]\\        \n");                         
+    printf("                 _I |_                            _| |_           \n");                       
+}
+
+
+void pessoa_2_5(){
+    printf("                 _____                                              _____           \n");
+    printf("                %% '-' %%                                            | *-* |       \n");
+    printf("                 /[U]\\                                            /[__I__]\\   \n");
+    printf("                 _I |_                                            _|     \\_       \n");
+}
+
+void pessoa_3_4(){
+    printf("                                _____          ________         \n");                      
+    printf("                               J O-O L           | `-` |  \n");             
+    printf("                               --[:]--            /[Y]\\ \n");                         
+    printf("                                _\\ /_             _| |_ \n");                       
+}
+
+void pessoa_3_5(){
+    printf("                                _____                               _____           \n");                      
+    printf("                               J O-O L                             | *-* |      \n");             
+    printf("                               --[:]--                            /[__I__]\\  \n");                         
+    printf("                                _\\ /_                             _|     \\_      \n");                       
+}
+
+void pessoa_4_5(){
+    printf("                                               ________             _____           \n");                      
+    printf("                                                 | `-` |           | *-* |      \n");             
+    printf("                                                  /[Y]\\           /[__I__]\\  \n");                         
+    printf("                                                  _| |_           _|     \\_      \n");                       
+}
+
+void pessoa_1_2_3(){
+    printf("  _____          _____          _____   \n");
+    printf("  //_+\\         %% '-' %%        J O-O L \n");
+    printf("  /[\\]\\          /[U]\\         --[:]-- \n");
+    printf(" _/  |_          _I |_          _\\ /_    \n");
+}
+
+void pessoa_1_2_4(){
+    printf("  _____          _____                         ________                   \n");
+    printf("  //_+\\         %% '-' %%                          | `-` |                  \n");
+    printf("  /[\\]\\          /[U]\\                            /[Y]\\               \n");
+    printf(" _/  |_          _I |_                            _| |_                \n");
+}
+
+void pessoa_1_2_4(){
+    printf("  _____          _____                         ________                   \n");
+    printf("  //_+\\         %% '-' %%                          | `-` |                  \n");
+    printf("  /[\\]\\          /[U]\\                            /[Y]\\               \n");
+    printf(" _/  |_          _I |_                            _| |_                \n");
+}
+
 
 
 void frame_0(){
@@ -203,7 +247,7 @@ void frame_2(){
 
 int main(){
     pessoas();
-    pessoa_2_5();
+    pessoa_1_2_4();
 
 
     return 0;
