@@ -2,7 +2,16 @@
 #include <stdlib.h>
 
 
+void anjo_direita(){
+    printf("                            -=-\n");
+    printf("                         (\\  _  /)\n");
+    printf("                         ( \\( )/ )\n");
+    printf("                         (       )\n");
+    printf("                          '>   <'\n");
+    printf("                          /     \\\n");
+    printf("                          '-._.-'\n");
 
+}
 
 
 
@@ -60,6 +69,8 @@ void frame_0(){
 }
 
 int main(){
+    dois_anjos();
+    anjo_direita();
     
 
 
