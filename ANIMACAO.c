@@ -92,8 +92,8 @@ void pessoa_2(){
 
 void pessoa_3(){
     printf("                                _____     \n");
-    printf("                               J O-O L \n");
-    printf("                               --[:]-- \n");
+    printf("                               J O-O L    \n");
+    printf("                               --[:]--    \n");
     printf("                                _\\ /_    \n");
 }
 
@@ -101,7 +101,7 @@ void pessoa_4(){
     printf("                                               ________   \n");
     printf("                                                 | `-` |  \n");
     printf("                                                  /[Y]\\  \n");
-    printf("                                                  _| |_    \n");
+    printf("                                                  _| |_   \n");
 }
 
 void pessoa_5(){
