@@ -46,7 +46,7 @@ void pessoas(){
     printf(" _/  |_          _I |_          _\\ /_             _| |_           _|     \\_\n");
 }
 
-int main(){
+void frame_0(){
     printf("Cena 0 - Ninguem no livro \n\n\n\n");
 
     dois_anjos();
@@ -57,6 +57,10 @@ int main(){
     porta_aberta();
     pula_linhas(3);
     pessoas();
+}
+
+int main(){
+    
 
 
     return 0;
