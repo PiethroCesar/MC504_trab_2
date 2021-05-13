@@ -202,7 +202,14 @@ void pessoa_1_2_5(){
     printf("  //_+\\         %% '-' %%                                            | *-* |                  \n");
     printf("  /[\\]\\          /[U]\\                                            /[__I__]\\               \n");
     printf(" _/  |_          _I |_                                            _|     \\_                 \n");
-} 
+}
+
+void pessoa_1_3_4(){
+    printf("  _____                         _____          ________                   \n");
+    printf("  //_+\\                        J O-O L           | `-` |                  \n");
+    printf("  /[\\]\\                        --[:]--            /[Y]\\               \n");
+    printf(" _/  |_                         _\\ /_             _| |_                \n");
+}
 
 
 
@@ -247,7 +254,7 @@ void frame_2(){
 
 int main(){
     pessoas();
-    pessoa_1_2_5();
+    pessoa_1_3_4();
 
 
     return 0;
