@@ -197,12 +197,12 @@ void pessoa_1_2_4(){
     printf(" _/  |_          _I |_                            _| |_                \n");
 }
 
-void pessoa_1_2_4(){
-    printf("  _____          _____                         ________                   \n");
-    printf("  //_+\\         %% '-' %%                          | `-` |                  \n");
-    printf("  /[\\]\\          /[U]\\                            /[Y]\\               \n");
-    printf(" _/  |_          _I |_                            _| |_                \n");
-}
+void pessoa_1_2_5(){
+    printf("  _____          _____                                              _____                    \n");
+    printf("  //_+\\         %% '-' %%                                            | *-* |                  \n");
+    printf("  /[\\]\\          /[U]\\                                            /[__I__]\\               \n");
+    printf(" _/  |_          _I |_                                            _|     \\_                 \n");
+} 
 
 
 
@@ -247,7 +247,7 @@ void frame_2(){
 
 int main(){
     pessoas();
-    pessoa_1_2_4();
+    pessoa_1_2_5();
 
 
     return 0;
