@@ -13,7 +13,25 @@ void anjo_direita(){
 
 }
 
+void anjo_esquerda(){
+    printf("        -=-     \n");
+    printf("     (\\  _  /) \n");
+    printf("     ( \\( )/ ) \n");
+    printf("     (       )  \n");
+    printf("      '>   <'   \n");
+    printf("      /     \\  \n");
+    printf("      '-._.-'   \n");
+}
 
+void anjo_centralizado(){
+    printf("                   -=-     \n");
+    printf("                (\\  _  /) \n");
+    printf("                ( \\( )/ ) \n");
+    printf("                (       )  \n");
+    printf("                 '>   <'   \n");
+    printf("                 /     \\  \n");
+    printf("                 '-._.-'   \n");
+}
 
 void dois_anjos(){
     printf("        -=-                 -=-\n");
@@ -31,6 +49,10 @@ void porta_aberta(){
     printf("      /\n");
     printf("     /\n");
     printf("    /\n");
+}
+
+void porta_fechada(){
+    printf("____________________________________________________\n");
 }
 
 void pula_linhas(int n){
@@ -56,11 +78,11 @@ void pessoas(){
 }
 
 void frame_0(){
-    printf("Cena 0 - Ninguem no livro \n\n\n\n");
-
+    printf("Cena 0 - Ninguem no livro");
+    pula_linhas(4);
     dois_anjos();
     porta_aberta();
-    pula_linhas(3);
+    pula_linhas(7);
     livro();
     pula_linhas(5);
     porta_aberta();
@@ -68,10 +90,36 @@ void frame_0(){
     pessoas();
 }
 
-int main(){
-    dois_anjos();
+void frame_1(){
+    printf("Cena 0 - Ninguem no livro");
+    pula_linhas(4);
     anjo_direita();
-    
+    porta_fechada();
+    anjo_centralizado(7);
+    livro();
+    pula_linhas(5);
+    porta_fechada();
+    pula_linhas(3);
+    pessoas();
+}
+
+void frame_2(){
+    printf("Cena 0 - Ninguem no livro");
+    pula_linhas(4);
+    anjo_esquerda();
+    porta_fechada();
+    anjo_centralizado(7);
+    livro();
+    pula_linhas(5);
+    porta_fechada();
+    pula_linhas(3);
+    pessoas();
+}
+
+int main(){
+    frame_0();
+    frame_1();
+    frame_2();
 
 
     return 0;
