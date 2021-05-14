@@ -225,6 +225,34 @@ void pessoa_1_4_5(){
     printf(" _/  |_                                           _| |_           _|     \\_               \n");
 }
 
+void pessoa_2_3_4(){
+    printf("                 _____          _____          ________                         \n");
+    printf("                %% '-' %%        J O-O L           | `-` |                       \n");
+    printf("                 /[U]\\         --[:]--            /[Y]\\                       \n");
+    printf("                 _I |_          _\\ /_             _| |_                       \n");
+}
+
+void pessoa_2_3_5(){
+    printf("                 _____          _____                               _____                 \n");
+    printf("                %% '-' %%        J O-O L                             | *-* |                  \n");
+    printf("                 /[U]\\         --[:]--                            /[__I__]\\                \n");
+    printf("                 _I |_          _\\ /_                             _|     \\_                \n");
+}
+
+void pessoa_2_4_5(){
+    printf("                 _____                         ________             _____                 \n");
+    printf("                %% '-' %%                          | `-` |           | *-* |                  \n");
+    printf("                 /[U]\\                            /[Y]\\           /[__I__]\\                \n");
+    printf("                 _I |_                            _| |_           _|     \\_                \n");
+}
+
+void pessoa_3_4_5(){
+    printf("                                _____          ________             _____                 \n");
+    printf("                               J O-O L           | `-` |           | *-* |                  \n");
+    printf("                               --[:]--            /[Y]\\           /[__I__]\\                \n");
+    printf("                                _\\ /_             _| |_           _|     \\_                \n");
+}
+
 
 
 void frame_0(){
@@ -268,7 +296,7 @@ void frame_2(){
 
 int main(){
     pessoas();
-    pessoa_1_4_5();
+    pessoa_3_4_5();
 
     return 0;
 }
