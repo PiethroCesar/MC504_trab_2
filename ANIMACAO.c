@@ -69,13 +69,6 @@ void livro(){
     printf("        '----------'-'----------'\n");
 }
 
-void pessoas(){
-    printf("  _____          _____          _____          ________             _____           \n");                      
-    printf("  //_+\\         %% '-' %%        J O-O L           | `-` |           | *-* |       \n");             
-    printf("  /[\\]\\          /[U]\\         --[:]--            /[Y]\\           /[__I__]\\   \n");                         
-    printf(" _/  |_          _I |_          _\\ /_             _| |_           _|     \\_       \n");                       
-}
-
 void pessoa_1(){
     printf("  _____  \n");
     printf("  //_+\\ \n");
@@ -253,24 +246,67 @@ void pessoa_3_4_5(){
     printf("                                _\\ /_             _| |_           _|     \\_                \n");
 }
 
+void pessoa_1_2_3_4(){
+    printf("  _____          _____          _____          ________                         \n");
+    printf("  //_+\\         %% '-' %%        J O-O L           | `-` |                       \n");
+    printf("  /[\\]\\          /[U]\\         --[:]--            /[Y]\\                       \n");
+    printf(" _/  |_          _I |_          _\\ /_             _| |_                       \n");
+}
 
+void pessoa_1_2_3_5(){
+    printf("  _____          _____          _____                               _____        \n");
+    printf("  //_+\\         %% '-' %%        J O-O L                             | *-* |      \n");
+    printf("  /[\\]\\          /[U]\\         --[:]--                            /[__I__]\\       \n");
+    printf(" _/  |_          _I |_          _\\ /_                             _|     \\_      \n");
+}
+
+void pessoa_1_2_4_5(){
+    printf("  _____          _____                         ________             _____        \n");
+    printf("  //_+\\         %% '-' %%                          | `-` |           | *-* |      \n");
+    printf("  /[\\]\\          /[U]\\                            /[Y]\\           /[__I__]\\       \n");
+    printf(" _/  |_          _I |_                            _| |_           _|     \\_      \n");
+}
+
+void pessoa_1_3_4_5(){
+    printf("  _____                         _____          ________             _____        \n");
+    printf("  //_+\\                        J O-O L           | `-` |           | *-* |      \n");
+    printf("  /[\\]\\                        --[:]--            /[Y]\\           /[__I__]\\       \n");
+    printf(" _/  |_                         _\\ /_             _| |_           _|     \\_      \n");
+}
+
+void pessoa_2_3_4_5(){
+    printf("                 _____          _____          ________             _____        \n");
+    printf("                %% '-' %%        J O-O L           | `-` |           | *-* |      \n");
+    printf("                 /[U]\\         --[:]--            /[Y]\\           /[__I__]\\       \n");
+    printf("                 _I |_          _\\ /_             _| |_           _|     \\_      \n");
+}
+
+void pessoas(){
+    printf("  _____          _____          _____          ________             _____           \n");                      
+    printf("  //_+\\         %% '-' %%        J O-O L           | `-` |           | *-* |       \n");             
+    printf("  /[\\]\\          /[U]\\         --[:]--            /[Y]\\           /[__I__]\\   \n");                         
+    printf(" _/  |_          _I |_          _\\ /_             _| |_           _|     \\_       \n");                       
+}
 
 void frame_0(){
-    printf("Cena 0 - Ninguem no livro");
-    pula_linhas(4);
+    pula_linhas(1);
+    printf("        Ninguem na bíblia");
+    pula_linhas(2);
     dois_anjos();
     porta_aberta();
     pula_linhas(7);
     livro();
     pula_linhas(5);
     porta_aberta();
-    pula_linhas(3);
+    pula_linhas(1);
     pessoas();
+    pula_linhas(1);
 }
 
 void frame_1(){
-    printf("Cena 0 - Ninguem no livro");
-    pula_linhas(4);
+    pula_linhas(1);
+    printf("        Anjo esquerdo escrevendo na bíblia");
+    pula_linhas(2);
     anjo_direita();
     porta_fechada();
     anjo_centralizado(7);
@@ -279,11 +315,13 @@ void frame_1(){
     porta_fechada();
     pula_linhas(3);
     pessoas();
+    pula_linhas(1);
 }
 
 void frame_2(){
-    printf("Cena 0 - Ninguem no livro");
-    pula_linhas(4);
+    pula_linhas(1);
+    printf("        Anjo direito escrevendo na bíblia");
+    pula_linhas(2);
     anjo_esquerda();
     porta_fechada();
     anjo_centralizado(7);
@@ -292,11 +330,45 @@ void frame_2(){
     porta_fechada();
     pula_linhas(3);
     pessoas();
+    pula_linhas(1);
+}
+
+void frame_3(){
+    pula_linhas(1);
+    printf("        Pessoa 1 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_2_3_4_5();
+    pula_linhas(1);
+}
+
+void frame_4(){
+    pula_linhas(1);
+    printf("        Pessoa 2 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_2();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_3_4_5();
+    pula_linhas(1);
 }
 
 int main(){
-    pessoas();
-    pessoa_3_4_5();
+    frame_4();
 
     return 0;
 }
