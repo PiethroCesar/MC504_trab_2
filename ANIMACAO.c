@@ -125,7 +125,6 @@ void pessoa_1_4(){
     printf(" _/  |_                                           _| |_    \n");
 }
 
-
 void pessoa_1_5(){
     printf("  _____                                                             _____\n");                      
     printf("  //_+\\                                                            | *-* |\n");             
@@ -146,7 +145,6 @@ void pessoa_2_4(){
     printf("                 /[U]\\                            /[Y]\\        \n");                         
     printf("                 _I |_                            _| |_           \n");                       
 }
-
 
 void pessoa_2_5(){
     printf("                 _____                                              _____           \n");
@@ -288,9 +286,9 @@ void pessoas(){
     printf(" _/  |_          _I |_          _\\ /_             _| |_           _|     \\_       \n");                       
 }
 
-void frame_0(){
+void frame_ninguem(){
     pula_linhas(1);
-    printf("        Ninguem na bíblia");
+    printf("        Ninguem na biblia");
     pula_linhas(2);
     dois_anjos();
     porta_aberta();
@@ -303,7 +301,7 @@ void frame_0(){
     pula_linhas(1);
 }
 
-void frame_1(){
+void frame_anjo_esq(){
     pula_linhas(1);
     printf("        Anjo esquerdo escrevendo na bíblia");
     pula_linhas(2);
@@ -318,7 +316,7 @@ void frame_1(){
     pula_linhas(1);
 }
 
-void frame_2(){
+void frame__anjo_dir(){
     pula_linhas(1);
     printf("        Anjo direito escrevendo na bíblia");
     pula_linhas(2);
@@ -333,7 +331,7 @@ void frame_2(){
     pula_linhas(1);
 }
 
-void frame_3(){
+void frame_pessoa_1(){
     pula_linhas(1);
     printf("        Pessoa 1 lendo a bíblia");
     pula_linhas(2);
@@ -350,7 +348,7 @@ void frame_3(){
     pula_linhas(1);
 }
 
-void frame_4(){
+void frame_pessoa_2(){
     pula_linhas(1);
     printf("        Pessoa 2 lendo a bíblia");
     pula_linhas(2);
@@ -367,8 +365,491 @@ void frame_4(){
     pula_linhas(1);
 }
 
+void frame_pessoa_3(){
+    pula_linhas(1);
+    printf("        Pessoa 3 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_3();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_2_4_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_4(){
+    pula_linhas(1);
+    printf("        Pessoa 4 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_4();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_2_3_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_5(){
+    pula_linhas(1);
+    printf("        Pessoa 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_2_3_4();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_2(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 2 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_2();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_3_4_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_3(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 3 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_3();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_2_4_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_4(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 4 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_4();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_2_3_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_5(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_2_3_4();
+    pula_linhas(1);
+}
+
+void frame_pessoa_2_3(){
+    pula_linhas(1);
+    printf("        Pessoas 2 e 3 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_2_3();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_4_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_2_4(){
+    pula_linhas(1);
+    printf("        Pessoas 2 e 4 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_2_4();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_3_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_2_5(){
+    pula_linhas(1);
+    printf("        Pessoas 2 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_2_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_3_4();
+    pula_linhas(1);
+}
+
+void frame_pessoa_3_4(){
+    pula_linhas(1);
+    printf("        Pessoas 3 e 4 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_3_4();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_2_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_3_5(){
+    pula_linhas(1);
+    printf("        Pessoas 3 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_3_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_2_4();
+    pula_linhas(1);
+}
+
+void frame_pessoa_4_5(){
+    pula_linhas(1);
+    printf("        Pessoas 4 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_4_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_2_3();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_2_3(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 2 e 3 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_2_3();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_4_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_2_4(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 2 e 4 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_2_4();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_3_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_2_5(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 2 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_2_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_3_4();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_3_4(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 3 e 4 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_3_4();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_2_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_3_5(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 3 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_3_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_2_4();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_4_5(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 4 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_4_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_2_3();
+    pula_linhas(1);
+}
+
+void frame_pessoa_2_3_4(){
+    pula_linhas(1);
+    printf("        Pessoas 2 e 3 e 4 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_2_3_4();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_2_3_5(){
+    pula_linhas(1);
+    printf("        Pessoas 2 e 3 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_2_3_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_4();
+    pula_linhas(1);
+}
+
+void frame_pessoa_2_4_5(){
+    pula_linhas(1);
+    printf("        Pessoas 2 e 4 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_2_4_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_3();
+    pula_linhas(1);
+}
+
+void frame_pessoa_3_4_5(){
+    pula_linhas(1);
+    printf("        Pessoas 3 e 4 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_3_4_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1_2();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_2_3_4(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 2 e 3 e 4 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_2_3_4();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_5();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_2_3_5(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 2 e 3 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_2_3_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_4();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_2_4_5(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 2 e 4 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_2_4_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_3();
+    pula_linhas(1);
+}
+
+void frame_pessoa_1_3_4_5(){
+    pula_linhas(1);
+    printf("        Pessoas 1 e 3 e 4 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_1_3_4_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_2();
+    pula_linhas(1);
+}
+
+void frame_pessoa_2_3_4_5(){
+    pula_linhas(1);
+    printf("        Pessoas 2 e 3 e 4 e 5 lendo a bíblia");
+    pula_linhas(2);
+    dois_anjos();
+    porta_fechada();
+    pula_linhas(7);
+    livro();
+    pula_linhas(1);
+    pessoa_2_3_4_5();
+    pula_linhas(1);
+    porta_aberta();
+    pula_linhas(1);
+    pessoa_1();
+    pula_linhas(1);
+}
+
+
+
+
 int main(){
-    frame_4();
+    
+
+
+
+    
 
     return 0;
 }
