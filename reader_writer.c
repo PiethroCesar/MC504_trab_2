@@ -14,21 +14,29 @@ void *writer(void *wno)
 {   
     sem_wait(&wrt);
 
+    srand(time(NULL));
+
     if ((*((int *)wno)) == 1)
     {
+        printf("\n----------------------------------------------------------------------------------------------------------\n");
+        printf("\n                              Anjo esquerdo está escrevendo\n");
         frame_anjo_esq();
+        printf("\n----------------------------------------------------------------------------------------------------------\n");
     }
     else{
+        printf("\n----------------------------------------------------------------------------------------------------------\n");
+        printf("\n                              Anjo direito está escrevendo\n");
         frame__anjo_dir();
+        printf("\n----------------------------------------------------------------------------------------------------------\n");
     }
-    
-    printf("Writer %d \n",(*((int *)wno)));
-    sleep(3);
+    sleep(rand() % 7 + 2);
     sem_post(&wrt);
 
 }
+
 void *reader(void *rno)
 {   
+    srand(time(NULL));
     // Reader acquire the lock before modifying numreader
     pthread_mutex_lock(&mutex);
     numreader++;
@@ -41,11 +49,13 @@ void *reader(void *rno)
 
     // Reading Section
     pthread_mutex_lock(&mutex);
+    printf("\n----------------------------------------------------------------------------------------------------------\n");
+    printf("\n                              Pessoa %d começou a ler \n",*((int *)rno));
     frame_readers(reading);
-    printf("Reader %d enters\n",*((int *)rno));
+    printf("\n----------------------------------------------------------------------------------------------------------\n");
     pthread_mutex_unlock(&mutex);
     
-    sleep((*((int *)rno))*2);
+    sleep(rand() % 7 + 2);
 
     // Reader acquire the lock before modifying numreader
     pthread_mutex_lock(&mutex);
@@ -57,8 +67,10 @@ void *reader(void *rno)
     pthread_mutex_unlock(&mutex);
 
     pthread_mutex_lock(&mutex);
+    printf("\n----------------------------------------------------------------------------------------------------------\n");
+    printf("\n                              Pessoa %d terminou a leitura\n",*((int *)rno));
     frame_readers(reading);
-    printf("Reader %d leaves\n",*((int *)rno));
+    printf("\n----------------------------------------------------------------------------------------------------------\n");
     pthread_mutex_unlock(&mutex);
 
     sleep(3);
@@ -71,9 +83,14 @@ int main()
     pthread_mutex_init(&mutex, NULL);
     sem_init(&wrt,0,1);
 
+    printf("\n----------------------------------------------------------------------------------------------------------\n");
+    frame_ninguem();
+    printf("\n----------------------------------------------------------------------------------------------------------\n");
+    sleep(3);
+
     int id[5] = {1,2,3,4,5}; //Just used for numbering the producer and consumer
 
-    for (size_t j = 0; j < 5; j++)
+    for (size_t j = 0; j < 2; j++)
     {
         pthread_create(&read[2], NULL, (void *)reader, (void *)&id[2]);
         pthread_create(&write[1], NULL, (void *)writer, (void *)&id[1]);
@@ -90,6 +107,11 @@ int main()
             pthread_join(write[i], NULL);
         }
     }
+
+    printf("\n----------------------------------------------------------------------------------------------------------\n");
+    frame_ninguem();
+    printf("\n----------------------------------------------------------------------------------------------------------\n");
+    sleep(3);
 
     pthread_mutex_destroy(&mutex);
     sem_destroy(&wrt);

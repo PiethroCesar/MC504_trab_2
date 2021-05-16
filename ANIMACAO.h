@@ -289,7 +289,6 @@ void pessoas(){
 
 void frame_ninguem(){
     pula_linhas(1);
-    printf("        Ninguem na biblia");
     pula_linhas(2);
     dois_anjos();
     porta_aberta();
@@ -304,7 +303,6 @@ void frame_ninguem(){
 
 void frame_anjo_esq(){
     pula_linhas(1);
-    printf("        Anjo esquerdo escrevendo na biblia");
     pula_linhas(2);
     anjo_direita();
     porta_fechada();
@@ -319,7 +317,6 @@ void frame_anjo_esq(){
 
 void frame__anjo_dir(){
     pula_linhas(1);
-    printf("        Anjo direito escrevendo na biblia");
     pula_linhas(2);
     anjo_esquerda();
     porta_fechada();
@@ -334,7 +331,6 @@ void frame__anjo_dir(){
 
 void frame_pessoa_1(){
     pula_linhas(1);
-    printf("        Pessoa 1 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -351,7 +347,6 @@ void frame_pessoa_1(){
 
 void frame_pessoa_2(){
     pula_linhas(1);
-    printf("        Pessoa 2 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -368,7 +363,6 @@ void frame_pessoa_2(){
 
 void frame_pessoa_3(){
     pula_linhas(1);
-    printf("        Pessoa 3 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -385,7 +379,6 @@ void frame_pessoa_3(){
 
 void frame_pessoa_4(){
     pula_linhas(1);
-    printf("        Pessoa 4 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -402,7 +395,6 @@ void frame_pessoa_4(){
 
 void frame_pessoa_5(){
     pula_linhas(1);
-    printf("        Pessoa 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -419,7 +411,6 @@ void frame_pessoa_5(){
 
 void frame_pessoa_1_2(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 2 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -436,7 +427,6 @@ void frame_pessoa_1_2(){
 
 void frame_pessoa_1_3(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 3 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -453,7 +443,6 @@ void frame_pessoa_1_3(){
 
 void frame_pessoa_1_4(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 4 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -470,7 +459,6 @@ void frame_pessoa_1_4(){
 
 void frame_pessoa_1_5(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -487,7 +475,6 @@ void frame_pessoa_1_5(){
 
 void frame_pessoa_2_3(){
     pula_linhas(1);
-    printf("        Pessoas 2 e 3 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -504,7 +491,6 @@ void frame_pessoa_2_3(){
 
 void frame_pessoa_2_4(){
     pula_linhas(1);
-    printf("        Pessoas 2 e 4 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -521,7 +507,6 @@ void frame_pessoa_2_4(){
 
 void frame_pessoa_2_5(){
     pula_linhas(1);
-    printf("        Pessoas 2 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -538,7 +523,6 @@ void frame_pessoa_2_5(){
 
 void frame_pessoa_3_4(){
     pula_linhas(1);
-    printf("        Pessoas 3 e 4 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -555,7 +539,6 @@ void frame_pessoa_3_4(){
 
 void frame_pessoa_3_5(){
     pula_linhas(1);
-    printf("        Pessoas 3 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -572,7 +555,6 @@ void frame_pessoa_3_5(){
 
 void frame_pessoa_4_5(){
     pula_linhas(1);
-    printf("        Pessoas 4 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -589,7 +571,6 @@ void frame_pessoa_4_5(){
 
 void frame_pessoa_1_2_3(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 2 e 3 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -606,7 +587,6 @@ void frame_pessoa_1_2_3(){
 
 void frame_pessoa_1_2_4(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 2 e 4 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -623,7 +603,6 @@ void frame_pessoa_1_2_4(){
 
 void frame_pessoa_1_2_5(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 2 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -640,7 +619,6 @@ void frame_pessoa_1_2_5(){
 
 void frame_pessoa_1_3_4(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 3 e 4 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -657,7 +635,6 @@ void frame_pessoa_1_3_4(){
 
 void frame_pessoa_1_3_5(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 3 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -674,7 +651,6 @@ void frame_pessoa_1_3_5(){
 
 void frame_pessoa_1_4_5(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 4 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -691,7 +667,6 @@ void frame_pessoa_1_4_5(){
 
 void frame_pessoa_2_3_4(){
     pula_linhas(1);
-    printf("        Pessoas 2 e 3 e 4 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -708,7 +683,6 @@ void frame_pessoa_2_3_4(){
 
 void frame_pessoa_2_3_5(){
     pula_linhas(1);
-    printf("        Pessoas 2 e 3 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -725,7 +699,6 @@ void frame_pessoa_2_3_5(){
 
 void frame_pessoa_2_4_5(){
     pula_linhas(1);
-    printf("        Pessoas 2 e 4 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -742,7 +715,6 @@ void frame_pessoa_2_4_5(){
 
 void frame_pessoa_3_4_5(){
     pula_linhas(1);
-    printf("        Pessoas 3 e 4 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -759,7 +731,6 @@ void frame_pessoa_3_4_5(){
 
 void frame_pessoa_1_2_3_4(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 2 e 3 e 4 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -776,7 +747,6 @@ void frame_pessoa_1_2_3_4(){
 
 void frame_pessoa_1_2_3_5(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 2 e 3 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -793,7 +763,6 @@ void frame_pessoa_1_2_3_5(){
 
 void frame_pessoa_1_2_4_5(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 2 e 4 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -810,7 +779,6 @@ void frame_pessoa_1_2_4_5(){
 
 void frame_pessoa_1_3_4_5(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 3 e 4 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -827,7 +795,6 @@ void frame_pessoa_1_3_4_5(){
 
 void frame_pessoa_2_3_4_5(){
     pula_linhas(1);
-    printf("        Pessoas 2 e 3 e 4 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -844,7 +811,6 @@ void frame_pessoa_2_3_4_5(){
 
 void frame_pessoa_1_2_3_4_5(){
     pula_linhas(1);
-    printf("        Pessoas 1 e 2 e 3 e 4 e 5 lendo a biblia");
     pula_linhas(2);
     dois_anjos();
     porta_fechada();
@@ -861,9 +827,14 @@ void frame_pessoa_1_2_3_4_5(){
 
 void frame_readers(int readers[5]){
 
+    if (readers[0] == 0 && readers[1] == 0 && readers[2] == 0 && readers[3] == 0 && readers[4] == 0)
+    {
+        frame_ninguem();
+    }
+
     // 1 pessoa lendo
 
-    if (readers[0] == 1 && readers[1] == 0 && readers[2] == 0 && readers[3] == 0 && readers[4] == 0)
+    else if (readers[0] == 1 && readers[1] == 0 && readers[2] == 0 && readers[3] == 0 && readers[4] == 0)
     {
         frame_pessoa_1();
     }
