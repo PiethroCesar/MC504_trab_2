@@ -4,19 +4,19 @@
 #include <unistd.h>
 #include "ANIMACAO.h"
 
-sem_t wrt;
+sem_t wrt; // Semáforo do escritor
 pthread_mutex_t mutex;
 
-int numreader = 0;
-int reading[5] = {0,0,0,0,0};
+int numreader = 0; // Número de pessoas lendo
+int reading[5] = {0,0,0,0,0}; // Quais pessoas estão lendo
 
-void *writer(void *wno)
+void *writer(void *wno) // Thread do writer (Anjo)
 {   
-    sem_wait(&wrt);
+    sem_wait(&wrt); // Espera estar liberadi
 
-    srand(time(NULL));
+    srand(time(NULL)); // Seed para rand()
 
-    if ((*((int *)wno)) == 1)
+    if ((*((int *)wno)) == 1) //Print do anjo correto
     {
         printf("\n----------------------------------------------------------------------------------------------------------\n");
         printf("\n                              Anjo esquerdo está escrevendo\n");
@@ -29,26 +29,28 @@ void *writer(void *wno)
         frame__anjo_dir();
         printf("\n----------------------------------------------------------------------------------------------------------\n");
     }
-    sleep(rand() % 7 + 2);
+    sleep(rand() % 7 + 2); // Tempo aletório de escrita entre 2 e 7 segudos
     sem_post(&wrt);
 
 }
 
 void *reader(void *rno)
 {   
-    srand(time(NULL));
-    // Reader acquire the lock before modifying numreader
+    srand(time(NULL)); // Seed para rand()
+
+    // Adquiri o lock para alterar o número de readers
     pthread_mutex_lock(&mutex);
     numreader++;
     reading[(*((int *)rno))-1]  = 1;
     if(numreader == 1) {
-        sem_wait(&wrt); // If this id the first reader, then it will block the writer
+        sem_wait(&wrt); // Se for o primeiro a ler coloca o anjo em espera
     }
     pthread_mutex_unlock(&mutex);
 
 
-    // Reading Section
-    pthread_mutex_lock(&mutex);
+    // Realiza a leitura
+
+    pthread_mutex_lock(&mutex); //Lock para terminar o print sem interferencia de outra thread
     printf("\n----------------------------------------------------------------------------------------------------------\n");
     printf("\n                              Pessoa %d começou a ler \n",*((int *)rno));
     frame_readers(reading);
@@ -57,16 +59,16 @@ void *reader(void *rno)
     
     sleep(rand() % 7 + 2);
 
-    // Reader acquire the lock before modifying numreader
+    // Adquiri novamente o lock para alterar readers
     pthread_mutex_lock(&mutex);
     numreader--;
     reading[(*((int *)rno))-1]  = 0;
     if(numreader == 0) {
-        sem_post(&wrt); // If this is the last reader, it will wake up the writer.
+        sem_post(&wrt); // Se for o último a para de ler libera o anjo
     }
     pthread_mutex_unlock(&mutex);
 
-    pthread_mutex_lock(&mutex);
+    pthread_mutex_lock(&mutex); //Lock para terminar o print sem interferencia de outra thread
     printf("\n----------------------------------------------------------------------------------------------------------\n");
     printf("\n                              Pessoa %d terminou a leitura\n",*((int *)rno));
     frame_readers(reading);
@@ -79,7 +81,7 @@ void *reader(void *rno)
 int main()
 {   
 
-    pthread_t read[5],write[2];
+    pthread_t read[5],write[2]; // 5 leitores e 2 escritores
     pthread_mutex_init(&mutex, NULL);
     sem_init(&wrt,0,1);
 
@@ -88,7 +90,7 @@ int main()
     printf("\n----------------------------------------------------------------------------------------------------------\n");
     sleep(3);
 
-    int id[5] = {1,2,3,4,5}; //Just used for numbering the producer and consumer
+    int id[5] = {1,2,3,4,5}; // Para idefentifcar leitores e escritores
 
     for (size_t j = 0; j < 2; j++)
     {
