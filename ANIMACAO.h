@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-#include<windows.h>
-
+#include <unistd.h>
 
 void anjo_direita(){
     printf("                            -=-\n");
@@ -310,7 +308,7 @@ void frame_anjo_esq(){
     pula_linhas(2);
     anjo_direita();
     porta_fechada();
-    anjo_centralizado(7);
+    anjo_centralizado();
     livro();
     pula_linhas(5);
     porta_fechada();
@@ -325,7 +323,7 @@ void frame__anjo_dir(){
     pula_linhas(2);
     anjo_esquerda();
     porta_fechada();
-    anjo_centralizado(7);
+    anjo_centralizado();
     livro();
     pula_linhas(5);
     porta_fechada();
@@ -861,18 +859,160 @@ void frame_pessoa_1_2_3_4_5(){
     pula_linhas(1);
 }
 
+void frame_readers(int readers[5]){
 
-int main(){
-    while(1){
-        system("cls");
-        frame_pessoa_1_2_3_4();
-        sleep(0.5);
-        system("cls");
-        frame_pessoa_1_2_3_5();
-        sleep(0.5);
+    // 1 pessoa lendo
 
+    if (readers[0] == 1 && readers[1] == 0 && readers[2] == 0 && readers[3] == 0 && readers[4] == 0)
+    {
+        frame_pessoa_1();
+    }
+    else if(readers[0] == 0 && readers[1] == 1 && readers[2] == 0 && readers[3] == 0 && readers[4] == 0)
+    {
+        frame_pessoa_2();
+    }
+    else if(readers[0] == 0 && readers[1] == 0 && readers[2] == 1 && readers[3] == 0 && readers[4] == 0)
+    {
+        frame_pessoa_3();
+    }
+    else if(readers[0] == 0 && readers[1] == 0 && readers[2] == 0 && readers[3] == 1 && readers[4] == 0)
+    {
+        frame_pessoa_4();
+    }
+    else if(readers[0] == 0 && readers[1] == 0 && readers[2] == 0 && readers[3] == 0 && readers[4] == 1)
+    {
+        frame_pessoa_5();
     }
 
+
+    // 2 pessoas lendo
+
+    else if(readers[0] == 1 && readers[1] == 1 && readers[2] == 0 && readers[3] == 0 && readers[4] == 0)
+    {
+        frame_pessoa_1_2();
+    }
+    else if(readers[0] == 1 && readers[1] == 0 && readers[2] == 1 && readers[3] == 0 && readers[4] == 0)
+    {
+        frame_pessoa_1_3();
+    }
+    else if(readers[0] == 1 && readers[1] == 0 && readers[2] == 0 && readers[3] == 1 && readers[4] == 0)
+    {
+        frame_pessoa_1_4();
+    }
+    else if(readers[0] == 1 && readers[1] == 0 && readers[2] == 0 && readers[3] == 0 && readers[4] == 1)
+    {
+        frame_pessoa_1_5();
+    }
+
+
+    else if(readers[0] == 0 && readers[1] == 1 && readers[2] == 1 && readers[3] == 0 && readers[4] == 0)
+    {
+        frame_pessoa_2_3();
+    }
+    else if(readers[0] == 0 && readers[1] == 1 && readers[2] == 0 && readers[3] == 1 && readers[4] == 0)
+    {
+        frame_pessoa_2_4();
+    }
+    else if(readers[0] == 0 && readers[1] == 1 && readers[2] == 0 && readers[3] == 0 && readers[4] == 1)
+    {
+        frame_pessoa_2_5();
+    }
+
+
+    else if(readers[0] == 0 && readers[1] == 0 && readers[2] == 1 && readers[3] == 1 && readers[4] == 0)
+    {
+        frame_pessoa_3_4();
+    }
+    else if(readers[0] == 0 && readers[1] == 0 && readers[2] == 1 && readers[3] == 0 && readers[4] == 1)
+    {
+        frame_pessoa_3_5();
+    }
+
+
+    else if(readers[0] == 0 && readers[1] == 0 && readers[2] == 0 && readers[3] == 1 && readers[4] == 1)
+    {
+        frame_pessoa_4_5();
+    }
+
+
+    // 3 pessoas lendo
+
+    else if(readers[0] == 1 && readers[1] == 1 && readers[2] == 1 && readers[3] == 0 && readers[4] == 0)
+    {
+        frame_pessoa_1_2_3();
+    }
+    else if(readers[0] == 1 && readers[1] == 1 && readers[2] == 0 && readers[3] == 1 && readers[4] == 0)
+    {
+        frame_pessoa_1_2_4();
+    }
+    else if(readers[0] == 1 && readers[1] == 1 && readers[2] == 0 && readers[3] == 0 && readers[4] == 1)
+    {
+        frame_pessoa_1_2_5();
+    }
+
+    else if(readers[0] == 1 && readers[1] == 0 && readers[2] == 1 && readers[3] == 1 && readers[4] == 0)
+    {
+        frame_pessoa_1_3_4();
+    }
+    else if(readers[0] == 1 && readers[1] == 0 && readers[2] == 1 && readers[3] == 0 && readers[4] == 1)
+    {
+        frame_pessoa_1_3_5();
+    }
+
+    else if(readers[0] == 1 && readers[1] == 0 && readers[2] == 0 && readers[3] == 1 && readers[4] == 1)
+    {
+        frame_pessoa_1_4_5();
+    }
+
+
+    else if(readers[0] == 0 && readers[1] == 1 && readers[2] == 1 && readers[3] == 1 && readers[4] == 0)
+    {
+        frame_pessoa_2_3_4();
+    }
+    else if(readers[0] == 0 && readers[1] == 1 && readers[2] == 1 && readers[3] == 0 && readers[4] == 1)
+    {
+        frame_pessoa_2_3_5();
+    }
+    else if(readers[0] == 0 && readers[1] == 1 && readers[2] == 0 && readers[3] == 1 && readers[4] == 1)
+    {
+        frame_pessoa_2_4_5();
+    }
+
+    else if(readers[0] == 0 && readers[1] == 0 && readers[2] == 1 && readers[3] == 1 && readers[4] == 1)
+    {
+        frame_pessoa_3_4_5();
+    }
+
+
+    // 4 pessoas lendo
+
+    else if(readers[0] == 1 && readers[1] == 1 && readers[2] == 1 && readers[3] == 1 && readers[4] == 0)
+    {
+        frame_pessoa_1_2_3_4();
+    }
+    else if(readers[0] == 1 && readers[1] == 1 && readers[2] == 1 && readers[3] == 0 && readers[4] == 1)
+    {
+        frame_pessoa_1_2_3_5();
+    }
+    else if(readers[0] == 1 && readers[1] == 1 && readers[2] == 0 && readers[3] == 1 && readers[4] == 1)
+    {
+        frame_pessoa_1_2_4_5();
+    }
+    else if(readers[0] == 1 && readers[1] == 0 && readers[2] == 1 && readers[3] == 1 && readers[4] == 1)
+    {
+        frame_pessoa_1_3_4_5();
+    }
+    else if(readers[0] == 0 && readers[1] == 1 && readers[2] == 1 && readers[3] == 1 && readers[4] == 1)
+    {
+        frame_pessoa_2_3_4_5();
+    }
+
+
+    // 5 pessoas lendo
+
+    else if(readers[0] == 1 && readers[1] == 1 && readers[2] == 1 && readers[3] == 1 && readers[4] == 1)
+    {
+        frame_pessoa_1_2_3_4_5();
+    }
     
-    return 0;
 }
