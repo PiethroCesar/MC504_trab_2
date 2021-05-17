@@ -13,7 +13,7 @@ int reading[5] = {0,0,0,0,0}; // Quais pessoas estão lendo
 
 void *writer(void *wno) // Thread do writer (Anjo)
 {   
-    sem_wait(&wrt); // Espera estar liberadi
+    sem_wait(&wrt); // Espera estar liberado
 
     srand(time(NULL)); // Seed para rand()
     pthread_mutex_lock(&mutex);
@@ -31,21 +31,16 @@ void *writer(void *wno) // Thread do writer (Anjo)
         printf("\n                              Anjo direito está escrevendo\n");
         frame_anjo_dir();
         printf("\n----------------------------------------------------------------------------------------------------------\n");
-    }
-    
+    }   
 	
-    sleep(rand() % 7 + 2); // Tempo aletório de escrita entre 2 e 7 segudos
-	printf("Maca\n");//tirar
+    sleep(rand() % 7 + 2); // Tempo aleatório de escrita entre 2 e 7 segudos
     sem_post(&wrt);
-	printf("Manga\n");//tirar
 	pthread_mutex_unlock(&mutex);
-	printf("Banana\n");//tirar
 
 }
 
 void *reader(void *rno)
 {   
-	printf("reader %d", (*((int *)rno))-1);//tirar
     srand(time(NULL)); // Seed para rand()
 
     // Adquiri o lock para alterar o número de readers
