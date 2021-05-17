@@ -32,14 +32,20 @@ void *writer(void *wno) // Thread do writer (Anjo)
         frame_anjo_dir();
         printf("\n----------------------------------------------------------------------------------------------------------\n");
     }
-    pthread_mutex_unlock(&mutex);
+    
+	
     sleep(rand() % 7 + 2); // Tempo aletório de escrita entre 2 e 7 segudos
+	printf("Maca\n");//tirar
     sem_post(&wrt);
+	printf("Manga\n");//tirar
+	pthread_mutex_unlock(&mutex);
+	printf("Banana\n");//tirar
 
 }
 
 void *reader(void *rno)
 {   
+	printf("reader %d", (*((int *)rno))-1);//tirar
     srand(time(NULL)); // Seed para rand()
 
     // Adquiri o lock para alterar o número de readers
