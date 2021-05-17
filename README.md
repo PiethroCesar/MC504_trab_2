@@ -17,7 +17,7 @@ make
 ### Execução
 
 ```console
-./reader
+./reader_writer
 ```
 
 ### Link para o vídeo
