@@ -389,9 +389,9 @@ void frame_anjo_esq(){
     porta_fechada();
     anjo_centralizado();
     livro();
-    pula_linhas(5);
+    pula_linhas(6);
     porta_fechada();
-    pula_linhas(3);
+    pula_linhas(1);
     pessoas();
     pula_linhas(1);
 }
@@ -404,9 +404,9 @@ void frame_anjo_dir(){
     porta_fechada();
     anjo_centralizado();
     livro();
-    pula_linhas(5);
+    pula_linhas(6);
     porta_fechada();
-    pula_linhas(3);
+    pula_linhas(1);
     pessoas();
     pula_linhas(1);
 }

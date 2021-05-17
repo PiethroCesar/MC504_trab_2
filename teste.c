@@ -3,10 +3,12 @@
 
 int main(){
 	int v[5];
+	system("clear");
 	frame_pessoa_1_5();
-	sleep(5);
+	sleep(2);
+	system("clear");
 	frame_pessoa_1_2_5();
-	sleep(5);
+	sleep(2);
 
 	for(int i=0; i<=1; i++){
 		for(int j=0; j<=1; j++){
