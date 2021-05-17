@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include "ANIMACAO.h"
+#include "ANIMACAO.c"
 
 sem_t wrt; // Semáforo do escritor
 pthread_mutex_t mutex;
@@ -19,12 +19,14 @@ void *writer(void *wno) // Thread do writer (Anjo)
 
     if ((*((int *)wno)) == 1) //Print do anjo correto
     {
+        system("clear");
         printf("\n----------------------------------------------------------------------------------------------------------\n");
         printf("\n                              Anjo esquerdo está escrevendo\n");
         frame_anjo_esq();
         printf("\n----------------------------------------------------------------------------------------------------------\n");
     }
     else{
+        system("clear");
         printf("\n----------------------------------------------------------------------------------------------------------\n");
         printf("\n                              Anjo direito está escrevendo\n");
         frame_anjo_dir();
@@ -52,6 +54,7 @@ void *reader(void *rno)
     // Realiza a leitura
 
     pthread_mutex_lock(&mutex); //Lock para terminar o print sem interferencia de outra thread
+    system("clear");
     printf("\n----------------------------------------------------------------------------------------------------------\n");
     printf("\n                              Pessoa %d começou a ler \n",*((int *)rno));
     frame_readers(reading);
@@ -70,6 +73,7 @@ void *reader(void *rno)
     pthread_mutex_unlock(&mutex);
 
     pthread_mutex_lock(&mutex); //Lock para terminar o print sem interferencia de outra thread
+    system("clear");
     printf("\n----------------------------------------------------------------------------------------------------------\n");
     printf("\n                              Pessoa %d terminou a leitura\n",*((int *)rno));
     frame_readers(reading);
@@ -85,7 +89,7 @@ int main()
     pthread_t read[5],write[2]; // 5 leitores e 2 escritores
     pthread_mutex_init(&mutex, NULL);
     sem_init(&wrt,0,1);
-
+    system("clear");
     printf("\n----------------------------------------------------------------------------------------------------------\n");
     frame_ninguem();
     printf("\n----------------------------------------------------------------------------------------------------------\n");
@@ -110,7 +114,7 @@ int main()
             pthread_join(write[i], NULL);
         }
     }
-
+    system("clear");
     printf("\n----------------------------------------------------------------------------------------------------------\n");
     frame_ninguem();
     printf("\n----------------------------------------------------------------------------------------------------------\n");
