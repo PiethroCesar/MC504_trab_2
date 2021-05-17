@@ -6,5 +6,18 @@ Esse projeto consiste em resolver algum problema clássico de aplicação multit
    
 Na nossa versão temos 1 bíblia, 5 fiéis que leêm a bíblia e 2 anjos escrevendo. Os anjos escrevem na bíblia quando não tiver ninguém presente na sala e os fiéis entram na sala quando não tiver nenhum anjo escrevendo, utilizamos de prints com desenhos ASCII para visualização dos cenários.
 
+### Compilação e execução
+
+Compilação:
+
+```console
+make
+```
+Execução:
+
+```console
+./reader
+```
+
 ### Link para o vídeo
 [Aqui]
