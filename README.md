@@ -6,16 +6,15 @@ Esse projeto consiste em resolver algum problema clássico de aplicação multit
   
 O problema escolhido pelo grupo chama-se readers-writers, consiste em leitores e escritores utilizando o mesmo livro, de forma que, escritores tem acesso exclusivo e leitores podem acessar concorrentemente. Isso pode ser expandido para bancos e estruturas de dados onde não podem ser acessados durante modificações.
    
-Na nossa versão temos 1 bíblia, 5 fiéis que leêm a bíblia e 2 anjos escrevendo. Os anjos escrevem na bíblia quando não tiver ninguém presente na sala e os fiéis entram na sala quando não tiver nenhum anjo escrevendo, utilizamos de prints com desenhos ASCII para visualização dos cenários.
+Na nossa versão temos 1 bíblia, 5 fiéis que leem a bíblia e 2 anjos escrevendo. Os anjos escrevem na bíblia quando não tiver ninguém presente na sala e os fiéis entram na sala quando não tiver nenhum anjo escrevendo, utilizamos de prints com desenhos ASCII para visualização dos cenários.
 
-### Compilação e execução
-
-Compilação:
+### Compilação
 
 ```console
 make
 ```
-Execução:
+
+### Execução
 
 ```console
 ./reader
