@@ -27,7 +27,10 @@ void pessoa_2_5();
 void pessoa_3_4();
 void pessoa_3_5();
 void pessoa_4_5();
-void pessoa_1_2_3();void pessoa_1_2_4();void pessoa_1_2_5();void pessoa_1_3_4();
+void pessoa_1_2_3();
+void pessoa_1_2_4();
+void pessoa_1_2_5();
+void pessoa_1_3_4();
 void pessoa_1_3_5();
 void pessoa_1_4_5();
 void pessoa_2_3_4();
@@ -128,6 +131,7 @@ void porta_aberta(){
 
 void porta_fechada(){
     printf("________________________________________________________________________________________________________________\n");
+    pula_linhas(3);
 }
 
 void pula_linhas(int n){
@@ -370,7 +374,7 @@ void frame_ninguem(){
     porta_aberta();
     pula_linhas(7);
     livro();
-    pula_linhas(5);
+    pula_linhas(6);
     porta_aberta();
     pula_linhas(1);
     pessoas();

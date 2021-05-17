@@ -16,7 +16,7 @@ void *writer(void *wno) // Thread do writer (Anjo)
     sem_wait(&wrt); // Espera estar liberadi
 
     srand(time(NULL)); // Seed para rand()
-
+    pthread_mutex_lock(&mutex);
     if ((*((int *)wno)) == 1) //Print do anjo correto
     {
         system("clear");
@@ -32,6 +32,7 @@ void *writer(void *wno) // Thread do writer (Anjo)
         frame_anjo_dir();
         printf("\n----------------------------------------------------------------------------------------------------------\n");
     }
+    pthread_mutex_unlock(&mutex);
     sleep(rand() % 7 + 2); // Tempo aletório de escrita entre 2 e 7 segudos
     sem_post(&wrt);
 
@@ -91,6 +92,7 @@ int main()
     sem_init(&wrt,0,1);
     system("clear");
     printf("\n----------------------------------------------------------------------------------------------------------\n");
+    printf("\n                              Inicio do programa\n");
     frame_ninguem();
     printf("\n----------------------------------------------------------------------------------------------------------\n");
     sleep(3);
@@ -116,6 +118,7 @@ int main()
     }
     system("clear");
     printf("\n----------------------------------------------------------------------------------------------------------\n");
+    printf("\n                              Fim do programa\n");
     frame_ninguem();
     printf("\n----------------------------------------------------------------------------------------------------------\n");
     sleep(3);
