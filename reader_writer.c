@@ -1,6 +1,7 @@
 #include <pthread.h>
 #include <semaphore.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include "ANIMACAO.h"
 
@@ -26,7 +27,7 @@ void *writer(void *wno) // Thread do writer (Anjo)
     else{
         printf("\n----------------------------------------------------------------------------------------------------------\n");
         printf("\n                              Anjo direito está escrevendo\n");
-        frame__anjo_dir();
+        frame_anjo_dir();
         printf("\n----------------------------------------------------------------------------------------------------------\n");
     }
     sleep(rand() % 7 + 2); // Tempo aletório de escrita entre 2 e 7 segudos
