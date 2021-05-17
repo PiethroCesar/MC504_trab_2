@@ -209,7 +209,7 @@ void pessoa_1_5(){
     printf("  _____                                                             _____\n");                      
     printf("  //_+\\                                                            | *-* |\n");             
     printf("  /[\\]\\                                                           /[__I__]\\\n");                         
-    printf(" _/  |_                                                            _|     \\_\n");                       
+    printf(" _/  |_                                                           _|     \\_\n");                       
 }
 
 void pessoa_2_3(){
