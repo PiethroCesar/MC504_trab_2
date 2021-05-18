@@ -2,7 +2,7 @@
 ## Grupo  
 ### Tiago Dall'Oca 206341 Heigon Soldera 217638 Piethro César 223549   
   
-Esse projeto consiste em resolver algum problema clássico de aplicação multithread e utilizar alguma forma de visualizaão gráfica.
+Esse projeto consiste em resolver algum problema clássico de aplicação multithread e utilizar alguma forma de visualização gráfica.
   
 O problema escolhido pelo grupo chama-se readers-writers, consiste em leitores e escritores utilizando o mesmo livro, de forma que, escritores tem acesso exclusivo e leitores podem acessar concorrentemente. Isso pode ser expandido para bancos e estruturas de dados onde não podem ser acessados durante modificações.
    
