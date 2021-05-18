@@ -1,6 +1,6 @@
 # Projeto 2 de MC504  
 ## Grupo  
-### Heigon Soldera 217638 Piethro César 223549 Tiago Dalloca  
+### Tiago Dall'Oca 206341 Heigon Soldera 217638 Piethro César 223549   
   
 Esse projeto consiste em resolver algum problema clássico de aplicação multithread e utilizar alguma forma de visualizaão gráfica.
   
