@@ -13,7 +13,7 @@ int reading[5] = {0,0,0,0,0}; // Quais pessoas estão lendo
 
 void *writer(void *wno) // Thread do writer (Anjo)
 {   
-    sem_wait(&wrt); // Espera estar liberado
+    sem_wait(&wrt);
 
     srand(time(NULL)); // Seed para rand()
     pthread_mutex_lock(&mutex);
