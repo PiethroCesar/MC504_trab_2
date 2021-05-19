@@ -21,4 +21,4 @@ make
 ```
 
 ### Link para o vídeo
-[Aqui]
+[Vídeo no google drive](https://drive.google.com/file/d/1jFXMSTMGs4E_B81T6ChZp7rrDxM71I5E/view?usp=sharing)
